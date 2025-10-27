@@ -1,0 +1,356 @@
+/* reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* fin del reset */
+
+
+
+/* Estilos generales */
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: rgb(255, 229, 198);
+}
+
+p {
+    display: flex;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+.subtítulos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+.títulos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    text-decoration: solid;
+    font-size: 25px;
+}
+
+.última-línea {
+    display: flex;
+    padding-bottom: 70px;
+}
+
+.logo-circular {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.logo-circular img {
+    width: 150%;
+    height: 150%;
+    object-fit: contain;
+}
+
+.contenedor-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
+
+/* Fin de Estilos generales */
+
+
+
+/* Header general */
+header {
+    text-align: center;
+    background-color: rgb(50, 22, 1);
+    color: beige;
+    font-size: 25px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px;
+}
+
+header nav ul li {
+    list-style: none;
+    display: inline;
+    margin: 20px;
+    text-align: center;
+}
+
+header nav ul li a {
+    color: beige;
+    text-decoration: none;
+}
+
+/* Fin del Header general */
+
+
+
+/* Footer general */
+footer {
+    background-color: rgb(50, 22, 1);
+    text-align: right;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    height: 60px;
+    display: grid;
+    grid-template-areas: "creado derechos redes";
+}
+
+.derechos {
+    text-align: left;
+    font-size: smaller;
+    color: beige;
+    display: inline;
+    grid-area: derechos;
+    align-items: end;
+    justify-content: center;
+    justify-items: center;
+}
+
+.contenedor-derechos {
+    grid-area: derechos;
+    align-items: end;
+    justify-items: center;
+}
+
+.creado {
+    text-align: left;
+    font-size: medium;
+    color: beige;
+    display: inline;
+    grid-area: creado;
+}
+
+.contenedor-creado {
+    display: grid;
+    grid-column: 1/2;
+    grid-area: creado;
+}
+
+footer ul li a {
+    display: inline;
+    list-style: none;
+    color: bisque;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    display: grid;
+    grid-column: 4/4;
+    justify-items: end;
+    grid-area: redes;
+}
+
+.redes {
+    display: inline;
+    list-style: none;
+    grid-area: redes;
+}
+
+/* Fin del Footer general */
+
+
+
+/* Estilos para el Index */
+.carrousel {
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+    border: 10px;
+}
+
+.carrousel img {
+    max-width: 100%;
+    max-height: 100%;
+    border: 10px solid;
+    border-color: rgb(195, 167, 133);
+}
+
+.contenedor-carrousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtítulo-sobre-mi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    font-size: medium;
+}
+
+/* Fin de Estilos para el Index */
+
+
+
+/* Estilos para Productos */
+.subtítulos {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    text-decoration: solid;
+}
+
+.contenedor-productos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.producto-1 {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: rgb(65, 30, 0);
+    color: white;
+}
+
+.producto-2 {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: rgb(65, 30, 0);
+    color: white;
+}
+
+.producto-3 {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: rgb(65, 30, 0);
+    color: white;
+}
+
+.más-información {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.formulario {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+/* Fin de Estilos para Productos */
+
+
+
+/* Estilos para Resultados */
+.main-resultados {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.caso-de-franco {
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    text-decoration: solid;
+    text-decoration: underline;
+}
+
+.contenedor-antes {
+    padding: 10px;
+    grid-row: 2/3;
+}
+
+.contenedor-durante {
+    padding: 10px;
+    grid-row: 3/4;
+    grid-column: 2/2;
+    justify-items: end;
+}
+
+.contenedor-despues {
+    padding: 10px;
+    grid-row: 4/5;
+}
+
+/* Fin de Estilos para Resultados */
+
+
+
+/* Estilos para Youtube */
+.contenido-youtube {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-decoration: underline;
+}
+
+/* Fin de Estilos para Youtube */
+
+
+
+/* Estilos para Blog */
+.tema {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    text-decoration: solid;
+    text-decoration: underline;
+}
+
+.listado-numerado {
+    list-style-type: decimal;
+    padding-left: 20px;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.contenedor-blog{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.contenedor-paso1{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.contenedor-paso2{
+    grid-column: 2/3;
+    grid-row: 2/2;
+}
+
+
+/* Fin de Estilos para Blog */
