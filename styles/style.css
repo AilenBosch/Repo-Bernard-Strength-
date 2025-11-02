@@ -300,8 +300,10 @@ footer ul li a {
 /* Estilos para Resultados */
 .main-resultados {
     display: grid;
-    grid-template-rows: repeat(5, 1fr);
     grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-items: center;
+    align-items: start;
 }
 
 .caso-de-franco {
@@ -317,16 +319,59 @@ footer ul li a {
     grid-row: 2/3;
 }
 
+.img-antes {
+    max-width: 80%;
+    max-height: 80%;
+    border: 10px solid;
+    border-color: rgb(195, 167, 133);
+}
+
+.contenedor-img-antes :hover {
+    border: 10px solid;
+    border-color: rgb(110, 86, 56);
+    max-width: 100%;
+    max-height: 100%;
+}
+
 .contenedor-durante {
     padding: 10px;
     grid-row: 3/4;
     grid-column: 2/2;
+}
+
+.img-durante {
+    max-width: 80%;
+    max-height: 80%;
+    border: 10px solid;
+    border-color: rgb(195, 167, 133);
+    display: grid;
     justify-items: end;
+}
+
+.contenedor-img-durante :hover {
+    border: 10px solid;
+    border-color: rgb(110, 86, 56);
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .contenedor-despues {
     padding: 10px;
     grid-row: 4/5;
+}
+
+.img-ahora {
+    max-width: 80%;
+    max-height: 80%;
+    border: 10px solid;
+    border-color: rgb(195, 167, 133);
+}
+
+.contenedor-img-ahora :hover {
+    border: 10px solid;
+    border-color: rgb(110, 86, 56);
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /* Fin de Estilos para Resultados */
