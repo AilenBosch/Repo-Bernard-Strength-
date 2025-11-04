@@ -9,6 +9,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/style.css">
     <title>Pablo Bernard Strength</title>
 </head>
@@ -51,10 +53,31 @@
 
 
     <main>
-        <div class="contenedor-carrousel">
-            <section class="carrousel">
-                <img src="./assets/Foto1.jpg" alt="Imagen 1">
+        <div id="carouselExample" class="carousel slide">
+            <section class="contenedor-carrousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" class="carrousel">
+                    <img src="./assets/Foto1.jpg" alt="Foto1" class="carrousel">
+                </div>
+                <div class="carousel-item" class="carrousel">
+                    <img src="./assets/Foto2.jpg" alt="Foto2" class="carrousel">
+                </div>
+                <div class="carousel-item" class="carrousel">
+                    <img src="./assets/Foto3.jpg" alt="Foto3" class="carrousel">
+                </div>
+                <div class="carousel-item" class="carrousel">
+                    <img src="./assets/Foto4.jpg" alt="Foto3" class="carrousel">
+                </div>
+            </div>
             </section>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
         <section class="subtítulo-sobre-mi">
             <h2 class="subtítulos">Sobre mi</h2>
