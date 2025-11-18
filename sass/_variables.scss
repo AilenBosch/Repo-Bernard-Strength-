@@ -1,0 +1,53 @@
+@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap);
+
+
+
+
+$color-fondo: #ffe5c6;
+$color-principal: rgb(50, 22, 1);
+$color-secundario: beige;
+$color-bisque: rgb(255, 228, 196);
+$color-borde-carrousel: rgb(195, 167, 133);
+
+
+$color-acento: $color-borde-carrousel;
+$color-texto: #222222;
+$color-fondo-suave: #fff6ef;
+$color-borde: $color-borde-carrousel; 
+$color-acento-hover: darken($color-acento, 8%);
+
+
+$font-titulos: "Bebas Neue", sans-serif;
+$font-textos: "Nunito", sans-serif;
+
+
+@mixin flex-center($direction: row) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin padding-x($amount) {
+    padding-left: $amount;
+    padding-right: $amount;
+}
+
+@mixin size($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin img-contain {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@mixin font($family, $size: null) {
+    font-family: $family;
+
+    @if $size {
+        font-size: $size;
+    }
+}

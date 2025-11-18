@@ -1,0 +1,40 @@
+@use "variables" as v;
+
+header {
+    text-align: center;
+    background-color: v.$color-principal;
+    color: v.$color-secundario;
+    @include v.font(v.$font-titulos, 25px);
+    padding: 10px;
+
+    nav {
+        ul {
+            li {
+                list-style: none;
+                display: inline;
+                margin: 20px;
+
+                a {
+                    color: v.$color-secundario;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.logo-circular {
+    @include v.size(100px, 100px);
+    border-radius: 50%;
+    overflow: hidden;
+    @include v.flex-center();
+
+    img {
+        @include v.img-contain;
+    }
+}
+
+.contenedor-logo {
+    @include v.flex-center();
+    padding: 10px;
+}
