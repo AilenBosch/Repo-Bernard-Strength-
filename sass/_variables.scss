@@ -18,6 +18,7 @@ $color-acento-hover: darken($color-acento, 8%);
 
 
 $font-titulos: "Bebas Neue", sans-serif;
+$font-dec-titulos: solid;
 $font-textos: "Nunito", sans-serif;
 
 
@@ -49,5 +50,17 @@ $font-textos: "Nunito", sans-serif;
 
     @if $size {
         font-size: $size;
+    }
+}
+
+@mixin mobile{
+    @media (min-width: 320px) and (max-width: 430px){
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media (min-width: 431px) and (max-width: 968px){
+        @content;
     }
 }
