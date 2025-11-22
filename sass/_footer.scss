@@ -1,5 +1,6 @@
 @use "variables" as v;
 
+
 footer {
     background-color: v.$color-principal;
     text-align: right;
@@ -59,4 +60,69 @@ footer {
             }
         }
     }
+}
+
+
+@include v.mobile {
+
+    .footer {
+        text-align: right;
+        font-family: v.$font-textos;
+        height: 55px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+
+        .contenedor-creado {
+            justify-self: start;
+
+            .creado {
+                text-align: left;
+                color: v.$color-secundario;
+                font-size: 8px;
+            }
+        }
+
+        .contenedor-derechos {
+            justify-self: center;
+            text-align: center;
+            @include v.flex-center(column);
+
+            .logo-footer {
+                @include v.size(20px, 20px);
+                margin-bottom: 5px;
+                object-fit: contain;
+            }
+
+            .derechos {
+                text-align: left;
+                font-size: 7px;
+                color: v.$color-secundario;
+            }
+        }
+
+        .redes {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            gap: 7px;
+            justify-self: end;
+            margin: 0;
+            padding: 0;
+
+            li {
+                a {
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
+                    color: v.$color-bisque;
+
+                    img {
+                        @include v.size(30px, 30px);
+                    }
+                }
+            }
+        }
+    }
+
 }

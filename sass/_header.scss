@@ -38,3 +38,35 @@ header {
     @include v.flex-center();
     padding: 10px;
 }
+
+
+@include v.mobile {
+    .logo-circular {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header {
+        text-align: center;
+        background-color: rgb(50, 22, 1);
+        color: beige;
+        font-size: 15px;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        padding: 8px;
+    }
+
+    header nav ul li {
+        list-style: none;
+        display: inline;
+        margin: 3px;
+        text-align: center;
+    }
+
+}

@@ -42,6 +42,33 @@ header nav ul li a {
   padding: 10px;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+  .logo-circular {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header {
+    text-align: center;
+    background-color: rgb(50, 22, 1);
+    color: beige;
+    font-size: 15px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    padding: 8px;
+  }
+  header nav ul li {
+    list-style: none;
+    display: inline;
+    margin: 3px;
+    text-align: center;
+  }
+}
 footer {
   background-color: rgb(50, 22, 1);
   text-align: right;
@@ -98,10 +125,66 @@ footer .redes li a img {
   height: 60px;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+  .footer {
+    text-align: right;
+    font-family: "Nunito", sans-serif;
+    height: 55px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+  }
+  .footer .contenedor-creado {
+    justify-self: start;
+  }
+  .footer .contenedor-creado .creado {
+    text-align: left;
+    color: beige;
+    font-size: 8px;
+  }
+  .footer .contenedor-derechos {
+    justify-self: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .contenedor-derechos .logo-footer {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5px;
+    object-fit: contain;
+  }
+  .footer .contenedor-derechos .derechos {
+    text-align: left;
+    font-size: 7px;
+    color: beige;
+  }
+  .footer .redes {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 7px;
+    justify-self: end;
+    margin: 0;
+    padding: 0;
+  }
+  .footer .redes li a {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: rgb(255, 228, 196);
+  }
+  .footer .redes li a img {
+    width: 30px;
+    height: 30px;
+  }
+}
 body {
   background-color: #ffe5c6;
   font-family: "Nunito", sans-serif;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .títulos {
@@ -168,6 +251,66 @@ p {
 }
 .whatsapp-estatico a img:hover {
   transform: scale(1.1);
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+  .subtítulos {
+    display: flex;
+    flex: row;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+  }
+  .títulos {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-family: "nunito", sans-serif;
+    font-optical-sizing: auto;
+    text-decoration: solid;
+    font-size: 23px;
+  }
+  .última-línea {
+    display: flex;
+    padding-bottom: 50px;
+  }
+  .carrousel {
+    display: flex;
+    flex-direction: row;
+    height: 325px;
+    width: 325px;
+    justify-content: center;
+    align-items: center;
+    border: 10px;
+  }
+  .carrousel img {
+    max-width: 100%;
+    max-height: 100%;
+    border: 2px solid;
+    border-color: rgb(195, 167, 133);
+  }
+  .contenedor-carrousel {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    border: 3px;
+  }
+  .whatsapp-estatico {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    justify-content: flex-end;
+    margin: 20px 15px;
+  }
+  .whatsapp-estatico a img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

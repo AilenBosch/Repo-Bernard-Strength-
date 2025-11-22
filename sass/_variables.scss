@@ -60,7 +60,7 @@ $font-textos: "Nunito", sans-serif;
 }
 
 @mixin tablet{
-    @media (min-width: 431px) and (max-width: 968px){
+    @media (min-width: 431px) and (max-width: 1024px){
         @content;
     }
 }
