@@ -1,2 +1,167 @@
 @use "variables" as v;
 
+body {
+    background-color: v.$color-fondo;
+    @include v.font(v.$font-textos, 20px);
+}
+
+.títulos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    @include v.font(v.$font-dec-titulos, solid);
+    @include v.font(v.$font-textos, 25px);
+}
+
+.caso-de-franco {
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    text-decoration: solid;
+    text-decoration: underline;
+}
+
+.main-resultados {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-items: center;
+    align-items: start;
+
+    .contenedor-antes {
+        padding: 10px;
+        grid-row: 2/3;
+
+        .contenedor-img-antes :hover {
+            border: 10px solid;
+            border-color: rgb(110, 86, 56);
+            max-width: 100%;
+            max-height: 100%;
+
+        }
+
+        .img-antes {
+            max-width: 80%;
+            max-height: 80%;
+            border: 10px solid;
+            border-color: rgb(195, 167, 133);
+        }
+    }
+
+    .contenedor-durante {
+        padding: 10px;
+        grid-row: 3/4;
+        grid-column: 2/2;
+
+        .contenedor-img-durante :hover {
+            border: 10px solid;
+            border-color: rgb(110, 86, 56);
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .img-durante {
+            max-width: 80%;
+            max-height: 80%;
+            border: 10px solid;
+            border-color: rgb(195, 167, 133);
+            display: grid;
+            justify-items: end;
+        }
+    }
+
+    .contenedor-despues {
+        padding: 10px;
+        grid-row: 4/5;
+
+        .contenedor-img-ahora :hover {
+            border: 10px solid;
+            border-color: rgb(110, 86, 56);
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .img-ahora {
+            max-width: 80%;
+            max-height: 80%;
+            border: 10px solid;
+            border-color: rgb(195, 167, 133);
+        }
+    }
+}
+
+@include v.mobile {
+    body {
+        background-color: v.$color-fondo;
+        @include v.font(v.$font-textos, 15px);
+    }
+
+    .caso-de-franco {
+        text-align: center;
+        font-family: "Nunito", sans-serif;
+        font-optical-sizing: auto;
+        text-decoration: solid;
+        text-decoration: underline;
+    }
+
+    .main-resultados {
+        display: grid;
+        grid-template-areas:
+            "h3a . "
+            "cta cta"
+            "h3d . "
+            "ctd ctd"
+            "h3dsp . "
+            "ctdesp ctdesp"
+        ;
+    }
+
+    .h3-antes {
+        grid-area: h3a;
+    }
+
+    .contenedor-antes {
+        grid-area: cta;
+    }
+
+    .img-antes {
+        width: 100%;
+        max-width: 400px;
+        border: 10px solid rgb(195, 167, 133);
+        border-radius: 10px;
+        justify-self: center;
+    }
+
+    .h3-durante {
+        grid-area: h3d;
+    }
+
+    .contenedor-durante {
+        grid-area: ctd;
+    }
+
+    .img-durante {
+        width: 100%;
+        max-width: 400px;
+        border: 10px solid rgb(195, 167, 133);
+        border-radius: 10px;
+        justify-self: center;
+    }
+
+    .h3-despues {
+        grid-area: h3dsp;
+    }
+
+    .contenedor-despues {
+        grid-area: ctdesp;
+    }
+
+    .img-ahora {
+        width: 100%;
+        max-width: 400px;
+        border: 10px solid rgb(195, 167, 133);
+        border-radius: 10px;
+        justify-self: center;
+    }
+}
