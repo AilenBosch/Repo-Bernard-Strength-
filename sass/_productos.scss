@@ -1,2 +1,137 @@
 @use "variables" as v;
 
+body {
+    background-color: v.$color-fondo;
+    @include v.font(v.$font-textos, 20px);
+}
+
+.títulos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    @include v.font(v.$font-dec-titulos, solid);
+    @include v.font(v.$font-textos, 25px);
+}
+
+.contenedor-productos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .producto-1 {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        background-color: rgb(65, 30, 0);
+        color: white;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .producto-2 {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        background-color: rgb(65, 30, 0);
+        color: white;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .producto-3 {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        background-color: rgb(65, 30, 0);
+        color: white;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.más-información {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.formulario {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+@include v.mobile {
+
+    .contenedor-productos {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        .producto-1 {
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+            border: 1px solid #ccc;
+            padding: 8px;
+            background-color: rgb(65, 30, 0);
+            color: white;
+            font-size: small;
+        }
+
+        .producto-2 {
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+            border: 1px solid #ccc;
+            padding: 8px;
+            background-color: rgb(65, 30, 0);
+            color: white;
+            font-size: small;
+        }
+
+        .producto-3 {
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+            border: 1px solid #ccc;
+            padding: 8px;
+            background-color: rgb(65, 30, 0);
+            color: white;
+            font-size: small;
+        }
+    }
+
+    .más-información {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: small;
+    }
+
+    .formulario {
+        text-align: center;
+        padding-bottom: 30px;
+        font-size: small;
+    }
+}
