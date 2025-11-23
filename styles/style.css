@@ -579,5 +579,132 @@ body {
     justify-self: center;
   }
 }
+body {
+  background-color: #ffe5c6;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+}
+
+.títulos {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  font-family: solid;
+  font-size: solid;
+  font-family: "Nunito", sans-serif;
+  font-size: 25px;
+}
+
+.listado-numerado {
+  list-style-type: decimal;
+  padding-left: 20px;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.contenedor-blog {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+.contenedor-blog .video-blog {
+  grid-column: 1/2;
+  text-align: center;
+  max-width: 100%;
+}
+.contenedor-blog .contenedor-pasos {
+  grid-column: 2/2;
+  text-align: center;
+  max-width: 100%;
+}
+.contenedor-blog .contenedor-pasos .listado-numerado {
+  list-style-type: decimal;
+  padding-left: 20px;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+  .títulos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    font-family: solid;
+    font-size: solid;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+  }
+  .contenedor-blog {
+    display: grid;
+    grid-template-areas: "video" "texto";
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px;
+  }
+  .contenedor-blog .video-blog {
+    grid-area: video;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedor-blog .video-blog iframe {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+  .contenedor-blog .contenedor-paso {
+    grid-area: texto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 10px;
+  }
+  .contenedor-blog .contenedor-paso section {
+    margin-bottom: 25px;
+  }
+}
+@media (min-width: 431px) and (max-width: 1024px) {
+  .títulos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    font-family: solid;
+    font-size: solid;
+    font-family: "Nunito", sans-serif;
+    font-size: 25px;
+  }
+  .contenedor-blog {
+    display: grid;
+    grid-template-areas: "video" "texto";
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr;
+    gap: 23px;
+    padding: 13px;
+  }
+  .contenedor-blog .video-blog {
+    grid-area: video;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedor-blog .contenedor-paso {
+    grid-area: texto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 13px;
+  }
+  .contenedor-blog .contenedor-paso section {
+    margin-bottom: 25px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

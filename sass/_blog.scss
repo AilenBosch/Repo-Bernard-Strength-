@@ -1,1 +1,140 @@
 @use "variables" as v;
+
+body {
+    background-color: v.$color-fondo;
+    @include v.font(v.$font-textos, 15px);
+}
+
+.títulos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    @include v.font(v.$font-dec-titulos, solid);
+    @include v.font(v.$font-textos, 25px);
+}
+
+.listado-numerado {
+    list-style-type: decimal;
+    padding-left: 20px;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.contenedor-blog {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+
+    .video-blog {
+        grid-column: 1/2;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .contenedor-pasos {
+        grid-column: 2/2;
+        text-align: center;
+        max-width: 100%;
+
+        .listado-numerado {
+            list-style-type: decimal;
+            padding-left: 20px;
+            font-family: "Nunito", sans-serif;
+            font-optical-sizing: auto;
+        }
+    }
+}
+
+@include v.mobile {
+
+    .títulos {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        @include v.font(v.$font-dec-titulos, solid);
+        @include v.font(v.$font-textos, 20px);
+    }
+
+    .contenedor-blog {
+        display: grid;
+        grid-template-areas:
+            "video"
+            "texto";
+        grid-template-rows: auto 1fr;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 10px;
+
+        .video-blog {
+            grid-area: video;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video-blog iframe {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+
+        .contenedor-paso {
+            grid-area: texto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+            padding: 10px;
+        }
+
+        .contenedor-paso section {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@include v.tablet{
+        .títulos {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        @include v.font(v.$font-dec-titulos, solid);
+        @include v.font(v.$font-textos, 25px);
+    }
+
+    .contenedor-blog {
+        display: grid;
+        grid-template-areas:
+            "video"
+            "texto";
+        grid-template-rows: auto 1fr;
+        grid-template-columns: 1fr;
+        gap: 23px;
+        padding: 13px;
+
+        .video-blog {
+            grid-area: video;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contenedor-paso {
+            grid-area: texto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+            padding: 13px;
+        }
+
+        .contenedor-paso section {
+            margin-bottom: 25px;
+        }
+    }
+}
