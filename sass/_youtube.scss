@@ -1,1 +1,37 @@
 @use "variables" as v;
+
+body {
+    background-color: v.$color-fondo;
+    @include v.font(v.$font-textos, 15px);
+}
+
+.títulos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    @include v.font(v.$font-dec-titulos, solid);
+    @include v.font(v.$font-textos, 25px);
+}
+
+.contenido-youtube {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-decoration: underline;
+}
+
+
+@include v.mobile {
+    .videos-youtube iframe {
+        width: 90%;
+        height: auto;
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .contenido-youtube {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        text-decoration: underline;
+    }
+}

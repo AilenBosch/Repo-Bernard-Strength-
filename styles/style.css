@@ -706,5 +706,41 @@ body {
     margin-bottom: 25px;
   }
 }
+body {
+  background-color: #ffe5c6;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+}
+
+.títulos {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  font-family: solid;
+  font-size: solid;
+  font-family: "Nunito", sans-serif;
+  font-size: 25px;
+}
+
+.contenido-youtube {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-decoration: underline;
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+  .videos-youtube iframe {
+    width: 90%;
+    height: auto;
+    max-width: 90%;
+    padding: 15px;
+  }
+  .contenido-youtube {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-decoration: underline;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
