@@ -54,20 +54,40 @@ p {
 
 .whatsapp-estatico {
     display: flex;
-    justify-content: center;
-    margin: 20px 0;
     justify-content: flex-end;
-    margin: 20px 40px;
+    margin: 20px 15px;
 
     a img {
         width: 60px;
         height: 60px;
-        object-fit: contain;
-        transition: transform 0.2s ease;
+        animation: vibrate 0.3s infinite;
+    }
+}
 
-        &:hover {
-            transform: scale(1.1);
-        }
+
+@keyframes vibrate {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        transform: translate(2px, 2px);
+    }
+
+    80% {
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        transform: translate(0);
     }
 }
 
@@ -122,19 +142,16 @@ p {
         border: 3px;
     }
 
-.whatsapp-estatico {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-    justify-content: flex-end;
-    margin: 20px 15px;
+    .whatsapp-estatico {
+        display: flex;
+        justify-content: flex-end;
+        margin: 20px 15px;
 
-    a img {
-        width: 30px;
-        height: 30px;
-        object-fit: contain;
-        transition: transform 0.2s ease;
+        a img {
+            width: 30px;
+            height: 30px;
+            animation: vibrate 0.3s infinite;
+        }
     }
-}
 
 }

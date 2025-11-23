@@ -47,9 +47,23 @@ $font-textos: "Nunito", sans-serif;
 
 @mixin font($family, $size: null) {
     font-family: $family;
+}
 
-    @if $size {
-        font-size: $size;
+@keyframes vibrate {
+    0%{
+transform: translateX(0);
+    }
+    25%{
+        transform: translateX(50px);
+    }
+    50%{
+        transform: translateX(-50px);
+    }
+    75%{
+        transform: translateX(50px)
+    }
+    100%{
+transform: translateX(0);
     }
 }
 

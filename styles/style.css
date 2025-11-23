@@ -1,11 +1,27 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap);
+@keyframes vibrate {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(50px);
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+  75% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 header {
   text-align: center;
   background-color: rgb(50, 22, 1);
   color: beige;
   font-family: "Bebas Neue", sans-serif;
-  font-size: 25px;
   padding: 10px;
 }
 header nav ul li {
@@ -184,7 +200,6 @@ footer .redes li a img {
 body {
   background-color: #ffe5c6;
   font-family: "Nunito", sans-serif;
-  font-size: 15px;
 }
 
 .títulos {
@@ -193,9 +208,7 @@ body {
   text-align: center;
   padding: 20px;
   font-family: solid;
-  font-size: solid;
   font-family: "Nunito", sans-serif;
-  font-size: 25px;
 }
 
 .carrousel {
@@ -238,21 +251,35 @@ p {
 
 .whatsapp-estatico {
   display: flex;
-  justify-content: center;
-  margin: 20px 0;
   justify-content: flex-end;
-  margin: 20px 40px;
+  margin: 20px 15px;
 }
 .whatsapp-estatico a img {
   width: 60px;
   height: 60px;
-  object-fit: contain;
-  transition: transform 0.2s ease;
-}
-.whatsapp-estatico a img:hover {
-  transform: scale(1.1);
+  animation: vibrate 0.3s infinite;
 }
 
+@keyframes vibrate {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
 @media (min-width: 320px) and (max-width: 430px) {
   .subtítulos {
     display: flex;
@@ -300,22 +327,18 @@ p {
   }
   .whatsapp-estatico {
     display: flex;
-    justify-content: center;
-    margin: 20px 0;
     justify-content: flex-end;
     margin: 20px 15px;
   }
   .whatsapp-estatico a img {
     width: 30px;
     height: 30px;
-    object-fit: contain;
-    transition: transform 0.2s ease;
+    animation: vibrate 0.3s infinite;
   }
 }
 body {
   background-color: #ffe5c6;
   font-family: "Nunito", sans-serif;
-  font-size: 20px;
 }
 
 .títulos {
@@ -324,9 +347,7 @@ body {
   text-align: center;
   padding: 20px;
   font-family: solid;
-  font-size: solid;
   font-family: "Nunito", sans-serif;
-  font-size: 25px;
 }
 
 .contenedor-productos {
@@ -441,7 +462,6 @@ body {
 body {
   background-color: #ffe5c6;
   font-family: "Nunito", sans-serif;
-  font-size: 20px;
 }
 
 .títulos {
@@ -450,9 +470,7 @@ body {
   text-align: center;
   padding: 20px;
   font-family: solid;
-  font-size: solid;
   font-family: "Nunito", sans-serif;
-  font-size: 25px;
 }
 
 .caso-de-franco {
@@ -526,7 +544,6 @@ body {
   body {
     background-color: #ffe5c6;
     font-family: "Nunito", sans-serif;
-    font-size: 15px;
   }
   .caso-de-franco {
     text-align: center;
@@ -582,7 +599,6 @@ body {
 body {
   background-color: #ffe5c6;
   font-family: "Nunito", sans-serif;
-  font-size: 15px;
 }
 
 .títulos {
@@ -591,9 +607,7 @@ body {
   text-align: center;
   padding: 20px;
   font-family: solid;
-  font-size: solid;
   font-family: "Nunito", sans-serif;
-  font-size: 25px;
 }
 
 .listado-numerado {
@@ -634,9 +648,7 @@ body {
     text-align: center;
     padding: 20px;
     font-family: solid;
-    font-size: solid;
     font-family: "Nunito", sans-serif;
-    font-size: 20px;
   }
   .contenedor-blog {
     display: grid;
@@ -676,9 +688,7 @@ body {
     text-align: center;
     padding: 20px;
     font-family: solid;
-    font-size: solid;
     font-family: "Nunito", sans-serif;
-    font-size: 25px;
   }
   .contenedor-blog {
     display: grid;
@@ -709,7 +719,6 @@ body {
 body {
   background-color: #ffe5c6;
   font-family: "Nunito", sans-serif;
-  font-size: 15px;
 }
 
 .títulos {
@@ -718,9 +727,7 @@ body {
   text-align: center;
   padding: 20px;
   font-family: solid;
-  font-size: solid;
   font-family: "Nunito", sans-serif;
-  font-size: 25px;
 }
 
 .contenido-youtube {
