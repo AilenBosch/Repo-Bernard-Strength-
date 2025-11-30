@@ -1,22 +1,11 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap);
-@keyframes vibrate {
-  0% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(50px);
-  }
-  50% {
-    transform: translateX(-50px);
-  }
-  75% {
-    transform: translateX(50px);
-  }
-  100% {
-    transform: translateX(0);
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 header {
   text-align: center;
   background-color: rgb(50, 22, 1);
@@ -85,6 +74,12 @@ header nav ul li a {
     text-align: center;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 footer {
   background-color: rgb(50, 22, 1);
   text-align: right;
@@ -407,6 +402,37 @@ body {
   padding-bottom: 30px;
 }
 
+.whatsapp-estatico {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 15px;
+}
+.whatsapp-estatico a img {
+  width: 60px;
+  height: 60px;
+  animation: vibrate 0.3s infinite;
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
 @media (min-width: 320px) and (max-width: 430px) {
   .contenedor-productos {
     display: flex;
@@ -457,6 +483,16 @@ body {
     text-align: center;
     padding-bottom: 30px;
     font-size: small;
+  }
+  .whatsapp-estatico {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 15px;
+  }
+  .whatsapp-estatico a img {
+    width: 30px;
+    height: 30px;
+    animation: vibrate 0.3s infinite;
   }
 }
 body {
@@ -595,6 +631,16 @@ body {
     border-radius: 10px;
     justify-self: center;
   }
+  .whatsapp-estatico {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 15px;
+  }
+  .whatsapp-estatico a img {
+    width: 30px;
+    height: 30px;
+    animation: vibrate 0.3s infinite;
+  }
 }
 body {
   background-color: #ffe5c6;
@@ -641,6 +687,37 @@ body {
   font-optical-sizing: auto;
 }
 
+.whatsapp-estatico {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 15px;
+}
+.whatsapp-estatico a img {
+  width: 60px;
+  height: 60px;
+  animation: vibrate 0.3s infinite;
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
 @media (min-width: 320px) and (max-width: 430px) {
   .títulos {
     display: flex;
@@ -680,6 +757,16 @@ body {
   .contenedor-blog .contenedor-paso section {
     margin-bottom: 25px;
   }
+  .whatsapp-estatico {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 15px;
+  }
+  .whatsapp-estatico a img {
+    width: 30px;
+    height: 30px;
+    animation: vibrate 0.3s infinite;
+  }
 }
 @media (min-width: 431px) and (max-width: 1024px) {
   .títulos {
@@ -715,6 +802,16 @@ body {
   .contenedor-blog .contenedor-paso section {
     margin-bottom: 25px;
   }
+  .whatsapp-estatico {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 15px;
+  }
+  .whatsapp-estatico a img {
+    width: 30px;
+    height: 30px;
+    animation: vibrate 0.3s infinite;
+  }
 }
 body {
   background-color: #ffe5c6;
@@ -736,6 +833,37 @@ body {
   text-decoration: underline;
 }
 
+.whatsapp-estatico {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 15px;
+}
+.whatsapp-estatico a img {
+  width: 60px;
+  height: 60px;
+  animation: vibrate 0.3s infinite;
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
 @media (min-width: 320px) and (max-width: 430px) {
   .videos-youtube iframe {
     width: 90%;
@@ -747,6 +875,16 @@ body {
     padding-top: 25px;
     padding-bottom: 25px;
     text-decoration: underline;
+  }
+  .whatsapp-estatico {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 15px;
+  }
+  .whatsapp-estatico a img {
+    width: 30px;
+    height: 30px;
+    animation: vibrate 0.3s infinite;
   }
 }
 

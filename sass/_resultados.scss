@@ -91,6 +91,7 @@ body {
     }
 }
 
+
 @include v.mobile {
     body {
         background-color: v.$color-fondo;
@@ -164,4 +165,17 @@ body {
         border-radius: 10px;
         justify-self: center;
     }
+
+    .whatsapp-estatico {
+        display: flex;
+        justify-content: flex-end;
+        margin: 20px 15px;
+
+        a img {
+            width: 30px;
+            height: 30px;
+            animation: vibrate 0.3s infinite;
+        }
+    }
+
 }
