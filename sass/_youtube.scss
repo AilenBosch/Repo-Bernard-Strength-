@@ -60,11 +60,12 @@ body {
 }
 
 @include v.mobile {
-    .videos-youtube iframe {
-        width: 90%;
-        height: auto;
-        max-width: 90%;
-        padding: 15px;
+
+    .videos-youtube {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
     }
 
     .contenido-youtube {
